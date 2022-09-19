@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="column" style="float:left; width:20%;">
+    <label for="titel">Title</label>
+    <input id="titel" name="titel"  [(ngModel)]="createOrEditeDto.title" />
+
+  </div>
+  <div class="column"style="float:right; width:80%;">
+    <label for="bodey">Bodey</label>
+    <input id="bodey" name="bodey" [(ngModel)]="createOrEditeDto.body"/>
+  </div>
+</div>
+<div class="column"style="float:right; width:100%;">
+ <button type="button" (click)="Save()">
+Save
+ </button>
+</div>
